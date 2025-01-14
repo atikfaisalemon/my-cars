@@ -38,11 +38,11 @@ Check out the deployed app here: [My-Cars Live](https://my-cars-one.vercel.app/)
 
 ## 📸 Screenshots
 
-### ![Component Breakdown diagram](https://drive.google.com/file/d/1qbLxO5K9Zw3-Oe5CrKl_mKKJncs4v6Cw/view?usp=sharing)
+### ![Component Breakdown diagram](https://ibb.co.com/C20nYZN)
 
-### ![Component Hierarchy diagram](https://drive.google.com/file/d/1qbLxO5K9Zw3-Oe5CrKl_mKKJncs4v6Cw/view?usp=sharing)
+### ![Component Hierarchy diagram](https://ibb.co.com/DkvqJwG)
 
-### ![React Dev Tools Screenshot](https://drive.google.com/file/d/1_PQ8sy8BTg1al5zkorcOkE3hvISXbaoX/view?usp=sharing)
+### ![React Dev Tools Screenshot](https://ibb.co.com/MSW7mYH)
 
 ---
 
