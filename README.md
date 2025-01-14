@@ -21,12 +21,13 @@ My-Cars is a fast and interactive React app built with **Vite**. It displays a l
 2.  **Install Dependencies**  
      Ensure you have Node.js installed. Then run:  
      `npm install`
-    For Tailwindcss:
+3.  **For Tailwindcss**  
     ` npm install -D tailwindcss`
     `npx tailwindcss init`
-3.  **Start the Development Server**  
+
+4.  **Start the Development Server**  
     `npm run dev`
-4.  **Visit the App**  
+5.  **Visit the App**  
     Open your browser and navigate to the URL provided by Vite (e.g., http://localhost:5173).
 
 ## 🌐 Live Demo
