@@ -40,6 +40,12 @@ Check out the deployed app here: [My-Cars Live](https://my-cars-one.vercel.app/)
 
 **Component Breakdown diagram**
 
+**The screenshot of the UX design diagram**
+
+### ![The screenshot of the UX design diagram](./src/assets/uiux%20desing.png)
+
+**Component Breakdown diagram**
+
 ### ![Component Breakdown diagram](./src/assets/BreakDown%20diagram.png)
 
 **Component Hierarchy diagram**
