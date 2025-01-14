@@ -10,7 +10,7 @@ const CarsInfo = ({ carDetails, checkPremium }) => {
         <span className="font-bold">Year:</span> {carDetails.year}
       </p>
       <p>
-        <span className="font-bold">Price:</span> {carDetails.price}
+        <span className="font-bold">Price:</span> ${carDetails.price}
       </p>
       <p>
         <span className="font-bold">Premium: </span>
