@@ -1,4 +1,4 @@
 const Header = () => {
-  return <div>Header</div>;
+  return <div className="text-2xl font-semibold text-left">TapaScript Car</div>;
 };
 export default Header;
