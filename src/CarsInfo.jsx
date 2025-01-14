@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const CarsInfo = ({ carDetails, checkPremium }) => {
   return (
-    <div className="mt-6 text-left text-gray-600">
+    <div className="mt-3 text-left text-gray-600">
       <p>
         <span className="font-bold">Brand:</span> {carDetails.brand}
       </p>

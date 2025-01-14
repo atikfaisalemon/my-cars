@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Cars = ({ cars }) => {
   return (
-    <div className="p-6 border rounded-lg shadow-md">
+    <div className="p-3 border rounded-lg shadow-md">
       <CarsTitle title={cars.title} />
       <CarsInfo carDetails={cars} checkPremium={cars.isPremium} />
     </div>

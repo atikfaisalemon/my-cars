@@ -44,7 +44,7 @@ const CarList = () => {
     },
   ];
   return (
-    <ul className="grid grid-cols-3 gap-6 mt-6">
+    <ul className="grid grid-cols-3 gap-5 mt-5">
       {CARS.map((cars) => (
         <li key={cars.id}>
           <Cars cars={cars} />
