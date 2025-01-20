@@ -1,12 +1,16 @@
-const SearchCars = () => {
+const SearchCars = ({ searchTerm, OnSearchTerm }) => {
   return (
-    <div>
+    <form action="">
       <input
+        onChange={(e) => {
+          OnSearchTerm(e.target.value);
+        }}
+        value={searchTerm}
         placeholder="Search Cars.."
         className="border rounded-md p-2 w-[350px]  flex items-start"
         type="text"
       />
-    </div>
+    </form>
   );
 };
 export default SearchCars;

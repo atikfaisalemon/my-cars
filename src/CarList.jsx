@@ -1,56 +1,23 @@
 import Cars from "./Cars";
 
-const CarList = () => {
-  const CARS = [
-    {
-      id: 1,
-      title: "Luxury Sedan",
-      brand: "Mercedes",
-      year: 2023,
-      price: 80000,
-      isPremium: true,
-    },
-    {
-      id: 2,
-      title: "Family SUV",
-      brand: "Toyota",
-      year: 2022,
-      price: 45000,
-      isPremium: false,
-    },
-    {
-      id: 3,
-      title: "Sports Car",
-      brand: "Porsche",
-      year: 2023,
-      price: 120000,
-      isPremium: true,
-    },
-    {
-      id: 4,
-      title: "Electric Hatchback",
-      brand: "Nissan",
-      year: 2022,
-      price: 35000,
-      isPremium: false,
-    },
-    {
-      id: 5,
-      title: "Luxury SUV",
-      brand: "BMW",
-      year: 2023,
-      price: 90000,
-      isPremium: true,
-    },
-  ];
-  return (
-    <ul className="grid grid-cols-3 gap-5 mt-5">
-      {CARS.map((cars) => (
-        <li key={cars.id}>
-          <Cars cars={cars} />
-        </li>
-      ))}
-    </ul>
-  );
+const CarList = ({ searchTerm, carsData, isPemium }) => {
+  console.log("isPremium", isPemium);
+
+  const rows = [];
+  carsData.filter((car) => {
+    if (car.isPremium) {
+      return;
+    }
+    rows.push(<Cars key={car.id} cars={car} />);
+  });
+
+  carsData.forEach((cars) => {
+    if (cars.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1) {
+      return;
+    }
+    rows.push(<Cars key={cars.id} cars={cars} />);
+  });
+
+  return <ul className="grid grid-cols-3 gap-5 mt-5">{rows}</ul>;
 };
 export default CarList;

@@ -1,7 +1,12 @@
-const ShowPremium = () => {
+const ShowPremium = ({ carsData, onPremium }) => {
   return (
     <div className="flex gap-3">
-      <input type="checkbox" name="" id="" />
+      <input
+        onChange={(e) => onPremium(e.target.checked)}
+        type="checkbox"
+        name=""
+        id=""
+      />
       <h2>Show Premium Only</h2>
     </div>
   );
