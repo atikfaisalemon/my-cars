@@ -17,7 +17,7 @@ Cars.propTypes = {
     title: PropTypes.string.isRequired,
     brand: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
     isPremium: PropTypes.bool.isRequired,
   }).isRequired,
 };
