@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const SearchCars = ({ searchTerm, OnSearchTerm }) => {
   return (
     <form action="">
@@ -13,4 +14,10 @@ const SearchCars = ({ searchTerm, OnSearchTerm }) => {
     </form>
   );
 };
+
+SearchCars.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  OnSearchTerm: PropTypes.func.isRequired,
+};
+
 export default SearchCars;

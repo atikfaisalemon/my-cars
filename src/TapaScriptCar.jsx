@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const TapaScriptCar = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [premium, setPremium] = useState("");
+  const [premium, setPremium] = useState(false);
 
   console.log(searchTerm);
 
@@ -53,12 +53,14 @@ const TapaScriptCar = () => {
     },
   ];
 
+  console.log("premium 56", premium);
+
   return (
-    <div>
+    <div className="mx-10 mt-6">
       <Header />
       <div className="flex items-center gap-3 mt-10">
         <SearchCars searchTerm={searchTerm} OnSearchTerm={setSearchTerm} />
-        <ShowPremium onPremium={setPremium} />
+        <ShowPremium onPremium={setPremium} isPremium={premium} />
       </div>
 
       <CarList searchTerm={searchTerm} carsData={CARS} isPremium={premium} />

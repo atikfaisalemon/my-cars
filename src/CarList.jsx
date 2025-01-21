@@ -1,23 +1,30 @@
 import Cars from "./Cars";
+import PropTypes from "prop-types";
 
-const CarList = ({ searchTerm, carsData, isPemium }) => {
-  console.log("isPremium", isPemium);
-
+const CarList = ({ searchTerm, carsData, isPremium }) => {
   const rows = [];
-  carsData.filter((car) => {
-    if (car.isPremium) {
-      return;
-    }
-    rows.push(<Cars key={car.id} cars={car} />);
-  });
 
-  carsData.forEach((cars) => {
-    if (cars.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1) {
+  carsData.forEach((car) => {
+    // Filter out cars based on the search term
+    if (car.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1) {
       return;
     }
-    rows.push(<Cars key={cars.id} cars={cars} />);
+
+    // Show only premium cars if isPremium is true
+    if (isPremium && !car.isPremium) {
+      return;
+    }
+
+    rows.push(<Cars key={car.id} cars={car} />);
   });
 
   return <ul className="grid grid-cols-3 gap-5 mt-5">{rows}</ul>;
 };
+
+CarList.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  carsData: PropTypes.array.isRequired,
+  isPremium: PropTypes.bool.isRequired,
+};
+
 export default CarList;
